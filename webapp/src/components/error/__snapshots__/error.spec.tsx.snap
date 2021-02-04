@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] Error should match snapshot 1`] = `
+<div>
+  <h1>
+    Oops!
+  </h1>
+  <span>
+    Well this is embarrassing... ¯\\_(ツ)_/¯
+  </span>
+</div>
+`;

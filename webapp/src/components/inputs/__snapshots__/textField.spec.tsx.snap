@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] Input should match snapshot 1`] = `
+.emotion-0 {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.emotion-0 label {
+  display: inline-block;
+  color: #8d8d8d;
+  font-size: 1rem;
+  pointer-events: none;
+  margin-bottom: 4px;
+}
+
+.emotion-0 input {
+  padding: 14.5px 10px;
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border-color: #d8d8d8;
+  border-radius: 4px;
+  border-style: solid;
+  height: 1.1876em;
+  margin: 0;
+}
+
+<form
+  action="#"
+>
+  <div
+    class="emotion-0"
+  >
+    <label
+      for="email"
+    >
+      Email
+    </label>
+    <input
+      autocomplete="username"
+      name="email"
+      type="email"
+      value=""
+    />
+  </div>
+</form>
+`;
