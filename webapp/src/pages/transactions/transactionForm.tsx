@@ -3,8 +3,8 @@ import { ApolloError, gql, useMutation } from "@apollo/client";
 import { Form, Formik, FormikProps } from "formik";
 import * as Yup from "yup";
 
-import { Button } from "src/components/button/button";
-import { TextField } from "src/components/inputs/textField";
+import { Button } from "src/components/button/Button";
+import { TextField } from "src/components/inputs/TextField";
 import { CreateTransactionInput, Transaction } from "src/generated/types";
 
 /**

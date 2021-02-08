@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Global, css } from "@emotion/react";
 
 import App from "./App";
-import { ErrorBoundary } from "./errorBoundary";
+import { ErrorBoundary } from "./ErrorBoundary";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(

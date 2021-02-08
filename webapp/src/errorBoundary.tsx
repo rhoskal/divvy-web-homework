@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Error } from "./components/error/error";
+import { Error } from "./components/error/Error";
 
 /**
  * Types

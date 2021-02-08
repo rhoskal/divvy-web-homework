@@ -3,13 +3,13 @@ import { gql, useQuery } from "@apollo/client";
 import { Column } from "react-table";
 import styled from "@emotion/styled";
 
-import { Error } from "src/components/error/error";
-import { Loading } from "src/components/loading/loading";
-import { Table } from "src/components/table/table";
+import { Error } from "src/components/error/Error";
+import { Loading } from "src/components/loading/Loading";
+import { Table } from "src/components/table/Table";
 import { Merchant } from "src/generated/types";
 import { isUndefined } from "src/utils/typeGuards";
 
-import { MerchantForm } from "./merchantForm";
+import { MerchantForm } from "./MerchantForm";
 
 /**
  * GraphQL

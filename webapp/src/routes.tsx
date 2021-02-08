@@ -2,10 +2,12 @@ import React from "react";
 import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 import styled from "@emotion/styled";
 
-import { DashboarPage } from "src/pages/dashboard/dashboardPage";
-import { MerchantsPage } from "src/pages/merchants/merchantsPage";
-import { TransactionsPage } from "src/pages/transactions/transactionsPage";
-import { UsersPage } from "src/pages/users/usersPage";
+import { DashboarPage } from "src/pages/dashboard/DashboardPage";
+import { MerchantsPage } from "src/pages/merchants/MerchantsPage";
+import { TransactionsPage } from "src/pages/transactions/TransactionsPage";
+import { UsersPage } from "src/pages/users/UsersPage";
+
+import { LangEnum, useLang } from "./AppContext";
 
 /**
  * Styles
@@ -51,22 +53,30 @@ export enum Routes {
  */
 
 function AppRouter(): JSX.Element {
+  const { lang } = useLang();
+
   return (
     <Router>
       <LayoutS>
         <NavS>
           <ul>
             <li>
-              <Link to={Routes.dashboard}>Dashboard</Link>
+              <Link to={Routes.dashboard}>
+                {lang === LangEnum.English ? "Dashboard" : "Tablero"}
+              </Link>
             </li>
             <li>
-              <Link to={Routes.users}>Users</Link>
+              <Link to={Routes.users}>{lang === LangEnum.English ? "Users" : "Usuarias"}</Link>
             </li>
             <li>
-              <Link to={Routes.merchants}>Merchants</Link>
+              <Link to={Routes.merchants}>
+                {lang === LangEnum.English ? "Merchants" : "Comerciantes"}
+              </Link>
             </li>
             <li>
-              <Link to={Routes.transactions}>Transactions</Link>
+              <Link to={Routes.transactions}>
+                {lang === LangEnum.English ? "Transactions" : "Las actas"}
+              </Link>
             </li>
           </ul>
         </NavS>

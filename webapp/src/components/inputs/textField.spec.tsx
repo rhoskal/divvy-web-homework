@@ -4,7 +4,7 @@ import userEvent from "@testing-library/user-event";
 import { Form, Formik } from "formik";
 import * as Yup from "yup";
 
-import { TextField } from "./textField";
+import { TextField } from "./TextField";
 
 describe("[Component] Input", () => {
   const onSubmit = jest.fn();

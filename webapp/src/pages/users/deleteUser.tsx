@@ -2,7 +2,7 @@ import React from "react";
 import { gql, useMutation } from "@apollo/client";
 
 import { User } from "src/generated/types";
-import { Button } from "src/components/button/button";
+import { Button } from "src/components/button/Button";
 
 /**
  * GraphQL

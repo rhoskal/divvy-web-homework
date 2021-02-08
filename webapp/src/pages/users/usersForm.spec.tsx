@@ -3,7 +3,7 @@ import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { MockedProvider, MockedResponse } from "@apollo/client/testing";
 
-import { CREATE_USER_MUTATION, UserForm } from "./userForm";
+import { CREATE_USER_MUTATION, UserForm } from "./UserForm";
 
 const mockUser = {
   dob: "02/02/2021",

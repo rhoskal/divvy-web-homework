@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import { Loading } from "./loading";
+import { Loading } from "./Loading";
 
 describe("[Component] Loading", () => {
   it("should match snapshot", () => {
